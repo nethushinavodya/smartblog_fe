@@ -1,12 +1,11 @@
 import { lazy, Suspense } from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { useAuth } from "../context/authContext"
 
 const Home = lazy(() => import("../pages/Home"))
 const Login = lazy(() => import("../pages/Login"))
 const Register = lazy(() => import("../pages/Register"))
 const Welcome = lazy(() => import("../pages/Welcome"))
-const Post = lazy(() => import("../pages/post"))
+const Post = lazy(() => import("../pages/Post.tsx"))
 
 export default function Router() {
   return (
